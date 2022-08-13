@@ -4,7 +4,7 @@ const postsController = require('../controllers/posts.controller');
 
 const router = express.Router();
 
-router.post("/create", postsController.createPost);
+router.post("/add-post", postsController.createPost);
 /**
  * @swagger
  * /posts/add-post:

@@ -4,7 +4,7 @@ const db = createPool({
   port: 3306,
   host: "localhost",
   user: "root",
-  password: "",
+  password: "rock@123",
   database: "my_post",
   connectionLimit: 10,
 });
