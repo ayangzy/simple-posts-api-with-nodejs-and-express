@@ -12,6 +12,14 @@ const postsRoutes = require('./routes/posts.route');
 
 app.use(bodyParser.json());
 
+app.get("/", (req, res) => {
+  res.status(200).send({status: "success", message: "Welcome to post apis. Kubernates is fun!!"});
+})
+
+app.get("/error", (req, res) => {
+  process.exit(1);
+});
+
 /** Swagger Initialization - START */
 const swaggerOption = {
     swaggerDefinition: (swaggerJsdoc.Options = {
